@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> task3 </title>
+</head>
+<body>
+		<button type="submit" id="startButton">Start to record</button>
+		<button type="submit" id="stopButton">stop record</button>
+
+		<form action="web.php" method="post">
+			<textarea id="textarea" rows="5" cols="50" name="textarea"></textarea><br>
+			<button type="submit" name="submit">Save</button>
+		  </form>
+
+		
+
+		  <style>
+			body {
+				text-align: center;
+				margin: 200px;
+				background-color: #5d5f83;
+				display: grid;
+				justify-content: center;
+				position: relative;
+				
+			}
+			
+			
+			
+			button[type="submit"] {
+				padding: 1.1em 2em;
+				background: none;
+				border: 2px solid #000000;
+				font-size: 15px;
+				color: #131313;
+				cursor: pointer;
+				position: relative;
+				overflow: hidden;
+				transition: all 0.3s;
+				border-radius: 12px;
+				background-color: #8a6087;
+				font-weight: bolder;
+				box-shadow: 0 2px 0 2px #000;
+				margin: 23px;
+				
+			}
+			
+			button[type="submit"]:hover {
+				background-color: #c858c0;
+				color: #fff;
+				box-shadow: 0 2px 0 2px #0d3b66;
+			}
+			
+			button[type="submit"]:hover::before {
+				transform: skewX(30deg) translate(150%, -50%);
+				transition-delay: 0.1s;
+			}
+			
+			button:active {
+				transform: scale(0.9);
+			}
+			
+			input[type="submit"] {
+				padding: 1.1em 2em;
+				background: none;
+				border: 2px solid #fff;
+				font-size: 15px;
+				color: #131313;
+				cursor: pointer;
+				position: relative;
+				overflow: hidden;
+				transition: all 0.3s;
+				border-radius: 12px;
+				background-color: #ffce74;
+				font-weight: bolder;
+				box-shadow: 0 2px 0 2px #000;
+			}
+			
+			input[type="submit"]:before {
+				content: "";
+				position: absolute;
+				width: 100px;
+				height: 120%;
+				background-color: #ff6700;
+				top: 50%;
+				transform: skewX(30deg) translate(-150%, -50%);
+				transition: all 0.5s;
+				margin: 23px;
+			
+			}
+			
+			input[type="submit"]:hover {
+				background-color: #f9b4d4;
+				color: #fff;
+				box-shadow: 0 2px 0 2px #0d3b66;
+			}
+			
+			input[type="submit"]:hover::before {
+				transform: skewX(30deg) translate(150%, -50%);
+				transition-delay: 0.1s;
+			}
+			
+			input[type="submit"]:active {
+				transform: scale(0.9);
+				
+			}
+	   </style>
+
+<script src="mm.js"></script>
+
+		  </body>
+		  </html>
